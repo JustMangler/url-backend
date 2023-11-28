@@ -16,7 +16,7 @@ defmodule MyAppWeb.Router do
 
   scope "/api", MyAppWeb do
     pipe_through :browser
-
+    get "/", LinkController, :new
     post "/create", LinkController, :create
   end
 
