@@ -1,0 +1,12 @@
+
+<div>
+  <h1 class="text-4xl font-medium text-blue-600">Hello</h1>
+  <form action="/" method="post">
+    <label for="link">Link:</label>
+    <input type="url" id="link" name="link" required />
+
+    <input type="hidden" value={ Phoenix.Controller.get_csrf_token() } name="_csrf_token"/>
+
+    <button type="submit" >Submit</button>
+  </form>
+</div>
